@@ -225,3 +225,126 @@
 // let purcheseAmout = 125;
 // let discount = purcheseAmout >= 100 ? 10 : 0;
 // console.log(´Your total is €${purcheseAmout - purcheseAmout * (discount/100)}´);
+
+
+
+
+// While loop = repeat some code while some condition is true
+
+// let loggedIn = false;
+// let username;
+// let password;
+
+// while(!loggedIn){
+    // username = window.prompt("enter your username");
+    // password = window.prompt("enter your password");
+
+    // if(username === "myUsername" && password === "myPassword"){
+        // loggedIn = true;
+        // console.log("You are logged in!");
+    // }
+    // else{
+        // console.log("Invalid credentials! Please try again");
+    // }
+// }
+
+
+
+// for loop = repeat some code a LIMITED amount of times
+
+// for(let i = 1; i <= 20; i++){
+    // if(i == 13){
+        // continue;
+    // }
+    // else{
+        // console.log(i);
+    // }
+// }      Continue jätab vahele numbri
+
+// for(let i = 1; i <= 20; i++){
+    // if(i == 13){
+        // break;
+    // }
+    // else{
+        // console.log(i);
+    // }
+// }         Break lõpetab lugemise peale antud arvu.
+
+
+
+
+// NUMBER GUESSING GAME
+
+// const minNum = 1;
+// const maxNum = 50;
+// const answer = Math.floor(Math.random() * (maxNum - minNum + 1));
+
+// let guess = parseInt(prompt("Guess the number between 1 and 50:"));
+
+// let guesses = 5;
+
+// while(guess !== answer && guesses > 1){
+    // if(guess > answer){
+        // guesses--;
+        // guess = parseInt(prompt("Guess is too high. Guess again. You have " + guesses + " guesses left."));
+    // }
+    // else{
+        // guesses--;
+        // guess = parseInt(prompt("Too low. Guess again. You have " + guesses + " guesses left."));
+    // }
+// }
+// if(guess === answer){
+    // alert("Congratulations. You guessed the number");
+// }  else{
+        // alert("Out of guesses. The number was " + answer);
+// }
+
+
+
+
+// function = a section of reusable code.
+//            Declare code once, use it whenever you want.
+//            Call the function to execute the code
+
+// function add(x, y){
+    // return x + y;
+// }
+// function subtract(x, y){
+    // return x - y;
+// }
+// function multiply(x, y){
+    // return x * y;
+// }
+// function divide(x, y){
+    // return x / y;
+// }
+// function isEven(number){
+    // return number % 2 === 0 ? true : false;
+// }
+// function isValidEmail(email){
+    // return email.includes("@") ? true : false;
+// }
+
+// console.log(isValidEmail("bro@fake.com"));
+// console.log(isValidEmail("elonmusk.com"));
+// console.log(isValidEmail("zuckerborg@meta.com"));
+
+
+
+
+// variable scope = where a variable is recognized
+//                  and accessible (local vs global)
+
+// let x = 3;
+
+// function2();
+
+// function function1(){
+    // let x = 1;
+    // console.log(x);
+// }
+
+// function function2(){
+    // let x = 2;
+    // console.log(x);
+// }
