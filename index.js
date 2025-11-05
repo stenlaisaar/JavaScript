@@ -348,3 +348,207 @@
     // let x = 2;
     // console.log(x);
 // }
+
+
+
+
+// Foreach() = method used to iterate over the elements
+//             of an array and apply a specified function (callback)
+//             to each element
+
+//              arrray.forEach(callback)
+//              element, index, array are provided
+
+
+// let fruits = ["apple", "banana", "cherry", "date"];
+
+// fruits.forEach(capitalaize);
+// fruits.forEach(display);
+
+// function capitalaize(element, index, array){
+    // array[index] = element.charAt(0).toUpperCase() + element.slice(1)
+// }
+
+// function display(element){
+    // console.log(element);
+// }
+
+
+
+
+// .map() = accepts a callback and applies that function
+//          to each element of an array, then return a new array
+
+// const numbers = [1, 2, 3, 4, 5];
+// const squares = numbers.map(square);
+// const cubes = numbers.map(cube);
+
+// console.log(cubes);
+
+// function square(element){
+    // return Math.pow(element, 2)
+// }
+
+// function cube(element){
+    // return Math.pow(element, 3)
+// }
+
+
+// .map() TEINE ÜL
+
+// const students = ["Spongebob", "Patrick", "Squidward", "Sandy"];
+// const studentsUpper = students.map(upperCase);
+// const studentsLower = students.map(lowerCase);
+
+// console.log(studentsLower);
+
+// function upperCase(element){
+    // return element.toUpperCase();
+// }
+
+// function lowerCase(element){
+    // return element.toLowerCase();
+// }
+
+
+// .map() KOLMAS ÜL
+
+// const dates = ["2024-1-10", "2025-2-20", "2026-3-30"];
+// const formattedDates = dates.map(formatDates);
+
+// console.log(formattedDates);
+
+// function formatDates(element){
+    // const parts = element.split("-");
+    // return `${parts[2]}.${parts[1]}.${parts[0]}`;
+// }
+
+
+
+
+// .filter() = creates a new arrat by filtering
+//             out elements
+
+// const ages = [16, 17, 18, 19, 20, 60];
+// const adults = ages.filter(isAdult);
+// const minors = ages.filter(isMinor)
+
+// console.log(minors);
+
+// function isAdult(element){
+    // return element >= 18;
+// }
+
+// function isMinor(element){
+    // return element < 18;
+// }
+
+// .filter() TEINE ÜL
+
+// const words = ["apple", "banana", "cherry", "date"];
+// const longWords = words.filter(getLongWords);
+
+// console.log(longWords);
+
+// function getLongWords(element){
+    // return element.length >= 6;
+// }
+
+
+
+
+// .reduce() = reduce the elements of an array
+//             to a single value
+
+// const prices = [5, 30, 10, 25, 15, 20];
+
+// const total = prices.reduce(sum);
+
+// console.log(`$${total.toFixed(2)}`)
+
+// function sum(accumulator, element){
+    // return accumulator + element;
+// }
+
+
+// .reduce() TEINE ÜL
+
+// const grades = [75, 50, 90, 80, 65, 95];
+
+// const maximum = grades.reduce(getMax);
+// const minimum = grades.reduce(getMin);
+
+// console.log(maximum);
+// console.log(minimum);
+
+// function getMax(accumulator, element){
+    // return Math.max(accumulator, element);
+// }
+
+// function getMin(accumulator, element){
+    // return Math.min(accumulator, element);
+// }
+
+
+
+
+// function declaration = define a reusable block of code
+//                        that perfos a specific task
+
+// function hello (){
+    // console.log("hello");
+// }
+
+// function expressions = a way to define functions as
+//.                       values or variables
+
+// const hello = function(){
+    // console.log("hello");
+// }
+
+// hello();
+
+
+
+
+// setTimeout(function(){
+    // console.log("hello");
+// }, 3000);
+
+
+
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const squares = numbers.map(function(element){
+    // return Math.pow(element, 2);
+// });
+
+// console.log(squares);
+
+
+
+
+
+
+// arrow functions = a concise way to write function expressions
+//                   good for simple functions that you only use once
+//                   (parameters) => some code
+
+// const hello = (name, age) => {console.log(`Hello ${name}`)
+                         // console.log(`you are ${age} years old`)};
+
+// hello("Bro", 20);
+
+
+
+// setTimeout( () => console.log("Hello"), 3000);
+
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// const squares = numbers.map((element) => Math.pow(element, 2));
+// const cubes = numbers.map((element) => Math.pow(element, 3));
+// const evenNums = numbers.filter((element) => element % 2 === 0);
+// const oddNums = numbers.filter((element) => element % 2 !== 0);
+
+// console.log(oddNums);
