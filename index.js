@@ -788,11 +788,11 @@
 
 // ARREY OF OBJECTS
 
-const fruits = [{name: "apple", color: "red", caloreies: 95},
-                {name: "orange", color: "orange", caloreies: 45},
-                {name: "banana", color: "yellow", caloreies: 105},
-                {name: "coconut", color: "white", caloreies: 159},
-                {name: "pineapple", color: "yellow", caloreies: 37}];
+// const fruits = [{name: "apple", color: "red", caloreies: 95},
+                // {name: "orange", color: "orange", caloreies: 45},
+                // {name: "banana", color: "yellow", caloreies: 105},
+                // {name: "coconut", color: "white", caloreies: 159},
+                // {name: "pineapple", color: "yellow", caloreies: 37}];
 
 
 // fruits.pop();
@@ -837,3 +837,221 @@ const fruits = [{name: "apple", color: "red", caloreies: 95},
 
 // console.log(maxFruit);
 // console.log(minFruit);
+
+
+
+
+
+
+// DOM = DOCUMENT OBJECT MODEL
+//       Object {} that represents the page you see in the web browser
+//       and provides you with an api to interact with it
+//       Web browser constructs the DOM When it load an HTML document,
+//       and structures all the elements in a tree-like representation
+//       JavaScript can access the DOM to dynamically
+//       change the content, structure, and style of a web page.
+
+
+// const username = "Sten";
+// const welcomeMsg = document.getElementById("welcome-msg");
+
+// welcomeMsg.textContent += username === "" ? `Guest` : username;
+
+// console.dir(document);
+
+
+
+
+
+
+// element selector = Methods used to target and manipulate HTML elements
+//                    they allow you to select one or multiple HTML elements
+//                    from the DOM (Document object Model)
+
+// 1. document.getElementById()         // Element or null
+// 2. document.getElementsClassName()   // HTML COLLECTION
+// 3. document.getElementsByTagName()   // HTML COLLECTION
+// 4. document.querySelector()          // ELEMENT OR NULL
+// 5. document.querySelectorAll()       // NODELIST
+
+
+
+// // 1. document.getElementById()         // Element or null
+// const myHeading = document.getElementById("my-heading");
+// myHeading.style.backgroundColor = "yellow";
+// myHeading.style.textAlign = "center";
+
+// console.log(myHeading);
+
+
+
+// 2. document.getElementsClassName()   // HTML COLLECTION
+// const fruits = document.getElementsByClassName("fruits");
+
+// Array.from(fruits).forEach(fruit => {
+    // fruit.style.backgroundColor = "yellow";
+// });
+
+
+
+// 3. document.getElementsByTagName()   // HTML COLLECTION
+// const h4Elements = document.getElementsByTagName("h4");
+// const liElements = document.getElementsByTagName("li");
+
+// Array.from(h4Elements).forEach(h4Element => {
+    // h4Element.style.backgroundColor = "yellow";
+// });
+
+// Array.from(liElements).forEach(liElement => {
+    // liElement.style.backgroundColor = "lightgreen";
+// });
+
+
+
+
+// 4. document.querySelector()          // ELEMENT OR NULL
+// const element = document.querySelector("li");
+
+// element.style.backgroundColor = "yellow";
+
+
+
+
+
+// 5. document.querySelectorAll()       // NODELIST
+// const foods = document.querySelectorAll("li");
+
+// foods.forEach(food => {
+    // food.style.backgroundColor = "yellow";
+// });
+
+
+
+
+
+
+
+
+
+// DOM Navigation = The process of navigating through the structure
+//                  of an HTML document using JavaScript.
+
+// .firstElementChild
+// .lastElementChild
+// .nextElementSibling
+// .previousElementSibling
+// .parentElement
+// .children
+
+// ---------------- firstElementChild -----------------
+
+// const element = document.getElementById("fruits");
+// const firstChild = element.firstElementChild;
+// firstChild.style.backgroundColor = "yellow";
+
+
+
+// const ulElements = document.querySelectorAll("ul");
+
+// ulElements.forEach(ulElement => {
+    // const firstChild = ulElement.firstElementChild;
+    // firstChild.style.backgroundColor = "yellow";
+// });
+
+
+
+
+// ---------------- .lastElementChild ------------
+
+// const element = document.getElementById("desserts");
+// const lastChild = element.lastElementChild;
+// lastChild.style.backgroundColor = "yellow";
+
+
+
+// const ulElements = document.querySelectorAll("ul");
+
+// ulElements.forEach(ulElement => {
+    // const lastChild = ulElement.lastElementChild;
+    // lastChild.style.backgroundColor = "yellow";
+// });
+
+
+
+
+// -------------------- .nextElementSibling ----------------
+
+// const element = document.getElementById("fruits");
+// const nextSibling = element.nextElementSibling;
+// nextSibling.style.backgroundColor = "yellow";
+
+
+
+
+// -------------------- .previousElementSibling ----------------
+
+// const element = document.getElementById("desserts");
+// const prevSibling = element.previousElementSibling;
+// prevSibling.style.backgroundColor = "yellow";
+
+
+
+// ---------------------- .parentElement --------------------
+
+// const element = document.getElementById("ice-cream");
+// const parent = element.parentElement;
+// parent.style.backgroundColor = "yellow";
+
+
+
+// ----------------------- .children ------------------------
+
+// const element = document.getElementById("fruits");
+// const children = element.children;
+
+// Array.from(children).forEach(child => {
+    // child.style.backgroundColor = "yellow";
+// });
+
+
+
+// children[1].style.backgroundColor = "yellow";
+
+
+
+
+
+
+
+
+
+
+
+// --------------- EXAMPLE 3 <li> ----------------
+
+// STEP 1 CREATE THE ELEMENT
+// const newListItem = document.createElement("li");
+
+
+// STEP " ADD ATTRIBUTES/PROPRETIES
+
+// newListItem.textContent = "coconut";
+// newListItem.id = "coconut";
+// newListItem.style.fontWeight = "bold";
+// newListItem.style.backgroundColor = "lightgreen";
+
+// STEP 3 APPEND ELEMENT TO DOM
+// document.body.append(newListItem);
+// document.body.prepend(newListItem);
+// document.getElementById("fruits").appent(newListItem);
+// document.getElementById("fruits").prepend(newListItem);
+
+// const banana = document.getElementById("banana");
+// document.getElementById("fruits").insertBefore(newListItem, banana);
+
+// const boxes = document.querySelectorAll(".box");
+// document.body.insertBefore(newLink, boxes[4]);
+
+// REMOVE HTML ELEMENT
+// document.body.removeChild(newLink);
+// document.getElementById("box1").removeChild(newLink);
