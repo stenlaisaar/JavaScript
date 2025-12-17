@@ -1055,3 +1055,183 @@
 // REMOVE HTML ELEMENT
 // document.body.removeChild(newLink);
 // document.getElementById("box1").removeChild(newLink);
+
+
+
+
+// eventListener = Listen for specific event to create interactive web pages
+//                 events: click, mouseover, mouseout
+//                 .addEventListener(event, callback);
+
+// const myBox = document.getElementById("myBox");
+
+// myBox.addEventListener("click", event => {
+    // event.target.style.backgroundColor = "tomato";
+    // event.target.textContent = "Ouch!";
+// });
+
+// myBox.addEventListener("mouseover", event => {
+    // event.target.style.backgroundColor = "yellow";
+    // event.target.textContent = "Dont't do it";
+// });
+
+// myBox.addEventListener("mouseout", event => {
+    // event.target.style.backgroundColor = "lightgreen";
+    // event.target.textContent = "Click Me";
+// });
+
+
+
+
+
+
+// eventListener = Listen for specific event to create interactive web pages
+//                 events: keydown, keyup
+//                 document.addEventListener(event, callback);
+
+
+// const myBox = document.getElementById("myBox");
+
+// document.addEventListener("keydown", event => {
+    // myBox.textContent = ":O";
+    // myBox.style.backgroundColor = "tomato";
+// });
+
+// document.addEventListener("keyup", event => {
+    // myBox.textContent = ":)";
+    // myBox.style.backgroundColor = "lightblue";
+// });
+
+
+
+
+// const myBox = document.getElementById("myBox");
+// const moveAmount = 10;
+// let x = 0;
+// let y = 0;
+
+// document.addEventListener("keydown", event => {
+
+    // if(event.key.startsWith("Arrow")){
+
+        // switch(event.key){
+            // case "ArrowUp":
+                // y -= moveAmount;
+                // break;
+            // case "ArrowDown":
+                // y += moveAmount;
+                // break;
+            // case "ArrowLeft":
+                // x -= moveAmount;
+                // break;
+            // case "ArrowRight":
+                // x += moveAmount;
+                // break;
+        // }
+
+        // myBox.style.top = `${y}px`;
+        // myBox.style.left = `${x}px`;
+    // }
+// });
+
+
+
+
+
+
+// Hide / Show img through javaScript
+
+// const myButton = document.getElementById("myButton");
+// const myImg = document.getElementById("myImg");
+
+// myButton.addEventListener("click", event => {
+    
+    // if(myImg.style.display === "none"){
+        // myImg.style.display = "block";
+        // myButton.textContent = "Show";
+    // }
+    // else{
+        // myImg.style.display = "none";
+        // myButton.textContent = "Show";
+    // }
+// });
+
+
+
+
+
+// NodeList = Static collection of HTML elements by (id, class, element)
+//            Can be created by using querySelectorAll()
+//            Similar to an array, but no (map, filter, reduce)
+//            NodeList won't update to automaticallt reflect changes
+
+let buttons = document.querySelectorAll(".myButtons");
+
+// ADD HTML/CSS PROPERITES
+
+// buttons.forEach(button => {
+    // button.style.backgroundColor = "green";
+    // button.textContent += ":)";
+// });
+
+
+
+// ADD CLICK event listener
+
+// buttons.forEach(buttons => {
+    // buttons.addEventListener("click", event => {
+        // event.target.style.backgroundColor = "tomato";
+    // });
+// });
+
+
+
+// MOUSEOVER + MOUSEOUT event listener
+
+// buttons.forEach(button => {
+    // button.addEventListener("mouseover", event => {
+        // event.target.style.backgroundColor = "hsl(205, 100%, 50%)";
+    // });
+// });
+
+// buttons.forEach(button => {
+    // button.addEventListener("mouseout", event => {
+        // event.target.style.backgroundColor = "hsl(205, 100%, 60%)";
+    // });
+// });
+
+
+
+
+// ADD ELEMENT
+
+// const newButton =  document.createElement("button"); // Step 1
+// newButton.textContent = "Button 5"; // Step 2
+// newButton.classList = "myButtons";
+// document.body.appendChild(newButton); // Step 3
+
+// buttons = document.querySelectorAll(".myButtons");
+
+// console.log(buttons);
+
+
+
+
+
+
+
+
+// classlist = Element property in JavaScript use to interact
+//             with and element's list of classes (CSS classes)
+//             Allows you to make reusable classes for many classes for many elements
+//             Across your webpage
+
+// add()
+// remove()
+// toggle(Remove if present, Add if not)
+// replace(oldClass, newClass)
+// contains()
+
+// const myButton = document.getElementById("myButton");
+
+// myButton.classList.add("enabled");
